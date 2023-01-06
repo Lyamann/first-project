@@ -8,10 +8,43 @@
 .container {
     max-width: 1210px;
     margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 a {
     text-decoration: none;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+    background: #17696A;
+    border-radius: 4px;
+    border: 1px solid #17696A;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    transition: ease-out 0.3s;
+}
+
+.button:hover {
+    background: none;
+    color:#17696A;
+}
+
+.button--outline {
+    color: #17696A;
+    background: none;
+}
+
+.button--outline:hover {
+    background: #17696A;
+    color: #FFFFFF;
 }
 
 .menu {
@@ -29,7 +62,25 @@ a {
 
 }
 
-.links__menu {
+.auth {
+    font-size: 14px;
+    line-height: 150%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    border: none;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.auth:hover {
+    opacity: 1;
+    transition: ease-out 0.3s;
+}
+
+.auth svg {
+    margin-right: 9px;
 }
 
 .links__menu-link:not(:last-child) {
@@ -181,4 +232,70 @@ a {
     background: linear-gradient(270.01deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
     width: 1px;
     height: 22px;
+}
+
+.hero {
+    background-image: url("/images/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding-top: 140px;
+    padding-bottom: 180px;
+}
+
+.hero__subtittle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1E212C;
+}
+
+.hero__tittle {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    color: #1E212C;
+    margin: 12px 0 60px;
+}
+
+.hero__number {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: #424551;
+    opacity: 0.6;
+    flex: 0 0 178px;
+}
+
+.hero__number__line {
+    width: 100%;
+    height: 2px;
+    background: #424551;
+    opacity: 0.6;
+    margin-top: 12px;
+}
+
+.hero__number:not(:last-child) {
+    margin-right: 4px;
+}
+
+.hero__numbers {
+    display: flex;
+}
+
+.hero__number--active {
+    opacity: 1;
+}
+
+.hero__buttons {
+    display: flex;
+    margin-bottom: 180px;
+}
+
+.hero__button__left {
+    margin-right: 24px;
 }
